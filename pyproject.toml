@@ -1,0 +1,15 @@
+[project]
+name = "fastlydep-eclipsebord"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel",
+]
+
+[tool.uv.workspace]
+members = [
+    "backend",
+    "frontend",
+]
