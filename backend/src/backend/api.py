@@ -6,8 +6,8 @@ app = FastAPI()
 
 @app.get("/solar")
 async def show_solar_data():
-    return solar_df
+    return solar_df.head(10).to_dict(orient="records")
 
 @app.get("/lunar")
 async def show_lunar_data():
-    return lunar_df
+    return lunar_df.head(10).to_dict(orient="records")
