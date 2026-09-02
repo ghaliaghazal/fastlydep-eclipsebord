@@ -51,5 +51,6 @@ def main():
     st.subheader("Lunar Eclipse Types")
     st.bar_chart(lunar_types)
 
+
 if __name__ == "__main__": 
     main()
