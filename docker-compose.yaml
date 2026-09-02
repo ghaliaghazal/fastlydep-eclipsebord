@@ -16,3 +16,4 @@ services:
       dockerfile: frontend/frontend.dockerfile
     ports:
       - "8501:8501"
+      
