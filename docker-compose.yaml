@@ -1,19 +1,22 @@
 services:
   backend:
     container_name: backend
+    platform: linux/amd64
     build:
       context: .
       dockerfile: backend/backend.dockerfile
     ports:
       - "8000:8000"
+    image: eclipsebordregistry-gbhxe0hbg3befacp.azurecr.io/backend:v1
 
 
 
   frontend:
     container_name: frontend
+    platform: linux/amd64
     build:
       context: .
       dockerfile: frontend/frontend.dockerfile
     ports:
       - "8501:8501"
-      
+    image: eclipsebordregistry-gbhxe0hbg3befacp.azurecr.io/frontend:v1
