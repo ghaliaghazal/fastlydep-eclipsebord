@@ -2,9 +2,10 @@
 import streamlit as st 
 import httpx 
 import pandas as pd
+import os 
 
 
-BASE_URL = "http://127.0.0.1:8000" 
+BASE_URL = os.getenv("BACKEND_URL", "http://127.0.0.1:8000")
 
 def main(): 
     st.markdown("## EclipseBord")
